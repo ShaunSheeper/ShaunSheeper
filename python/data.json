@@ -1,0 +1,98 @@
+{
+    "0": {
+        "people_name": "Fleur Lacarelle",
+        "phone_number": "06 61 60 03 15",
+        "address": "Etiau 49160 Longue-Jumelles",
+        "description": "A l'est d'angers, grande foret avec cours d'eau proche.",
+        "size": "TroupCompa",
+        "summer": "oui",
+        "location": [
+            47.403807,
+            -0.070234
+        ]
+    },
+    "1": {
+        "people_name": "M. De L\u2019Espinay",
+        "phone_number": "02 47 50 29 74",
+        "address": "Ch\u00e2teau De Nitray 37270 Ath\u00e9e Sur Cher",
+        "description": "Chateau avec bois. attention, ouvert au public en \u00e9t\u00e9",
+        "size": "Troupe/Compa",
+        "summer": "oui",
+        "location": [
+            47.340803,
+            0.8945073925081433
+        ]
+    },
+    "2": {
+        "people_name": "M.Coquelin",
+        "phone_number": "0231793737",
+        "address": "Les Moutiers En Cinglais 14220",
+        "description": "",
+        "size": "Meute/Ronde",
+        "summer": "none",
+        "location": [
+            49.0315767,
+            -0.4227027
+        ]
+    },
+    "3": {
+        "people_name": "M.De La Motte Rouge",
+        "phone_number": "",
+        "address": "La Motte Rouge 22400",
+        "description": "Pour 1 patrouille",
+        "size": "Patrouille/Equipe",
+        "summer": "non",
+        "location": [
+            48.5632353,
+            -2.4594849
+        ]
+    },
+    "4": {
+        "people_name": "M.De Rosanbo",
+        "phone_number": "0296328104/0663145728",
+        "address": "Le Hourmelin 22400",
+        "description": "",
+        "size": "Meute/Ronde",
+        "summer": "oui",
+        "location": [
+            48.5115831,
+            -2.5580518
+        ]
+    },
+    "5": {
+        "people_name": "M.Michel De Kermel",
+        "phone_number": "02 96 91 35 75",
+        "address": "Kermezen 22450",
+        "description": "",
+        "size": "",
+        "summer": "",
+        "location": [
+            48.727568,
+            -3.2666034
+        ]
+    },
+    "6": {
+        "people_name": "M.Roche",
+        "phone_number": "02.96.27.60.21",
+        "address": "Thaumatz 22980",
+        "description": "",
+        "size": "Meute/Ronde",
+        "summer": "oui",
+        "location": [
+            48.4457015,
+            -2.189298475806452
+        ]
+    },
+    "7": {
+        "people_name": "M.De Quenetain",
+        "phone_number": "02 99 44 46 76",
+        "address": "Le Gros Chêne 31150 AMANLIS",
+        "description": "",
+        "size": "",
+        "summer": "",
+        "location": [
+            47.990026617309624,
+            -1.4711707469912838
+        ]
+    }
+}

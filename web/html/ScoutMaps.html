@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_686827d8be69451cba59ac112065c160 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_686827d8be69451cba59ac112065c160" ></div>
+        
+</body>
+<script>    
+    
+            var map_686827d8be69451cba59ac112065c160 = L.map(
+                "map_686827d8be69451cba59ac112065c160",
+                {
+                    center: [46.0, 2.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_686827d8be69451cba59ac112065c160);
+
+            
+
+        
+    
+            var tile_layer_62aab873f501425daa7d716bbdb33fd4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 7, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_686827d8be69451cba59ac112065c160);
+        
+    
+            var tile_layer_48f632d4eb7c45f79c8adf1b36c180c0 = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=m\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 7, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_686827d8be69451cba59ac112065c160);
+        
+    
+            var tile_layer_17265e70aa834179abbbc1f55851c82e = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 7, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_686827d8be69451cba59ac112065c160);
+        
+    
+            var layer_control_2413906a41cf4ea8bc0d15f8fcbfc351 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_62aab873f501425daa7d716bbdb33fd4,
+                },
+                overlays :  {
+                    "Google Maps" : tile_layer_48f632d4eb7c45f79c8adf1b36c180c0,
+                    "Google Satellite" : tile_layer_17265e70aa834179abbbc1f55851c82e,
+                },
+            };
+            L.control.layers(
+                layer_control_2413906a41cf4ea8bc0d15f8fcbfc351.base_layers,
+                layer_control_2413906a41cf4ea8bc0d15f8fcbfc351.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_686827d8be69451cba59ac112065c160);
+        
+    
+            var marker_3a728d66cb79446a9cc0b8c9c2a19250 = L.marker(
+                [47.403807, -0.070234],
+                {}
+            ).addTo(map_686827d8be69451cba59ac112065c160);
+        
+    
+        var popup_eb6cc527579c4e29b72b2847499e28af = L.popup({"maxWidth": 500, "minWidth": 300});
+
+        
+            var i_frame_f1f92516f6ad4cb9b87a45202c40f147 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBFdGlhdSA0OTE2MCBMb25ndWUtSnVtZWxsZXM8YnI+RmxldXIgTGFjYXJlbGxlPGJyPjA2IDYxIDYwIDAzIDE1PGJyPkNhbXAgcG91cjogVHJvdXBDb21wYTxicj5DYW1wIGQnw6l0w6k6IG91aQ==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_eb6cc527579c4e29b72b2847499e28af.setContent(i_frame_f1f92516f6ad4cb9b87a45202c40f147);
+        
+
+        marker_3a728d66cb79446a9cc0b8c9c2a19250.bindPopup(popup_eb6cc527579c4e29b72b2847499e28af)
+        ;
+
+        
+    
+    
+            marker_3a728d66cb79446a9cc0b8c9c2a19250.bindTooltip(
+                `<div>
+                     Etiau 49160 Longue-Jumelles
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64676de0ad634045a3d1b1a2d5fbc4ab = L.marker(
+                [47.340803, 0.8945073925081433],
+                {}
+            ).addTo(map_686827d8be69451cba59ac112065c160);
+        
+    
+        var popup_73847526199c4fefb5f600ff7bf71a0e = L.popup({"maxWidth": 500, "minWidth": 300});
+
+        
+            var i_frame_54368b0f2b854b49a024168aa834c7f0 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBDaMOidGVhdSBEZSBOaXRyYXkgMzcyNzAgQXRow6llIFN1ciBDaGVyPGJyPk0uIERlIEzigJlFc3BpbmF5PGJyPjAyIDQ3IDUwIDI5IDc0PGJyPkNhbXAgcG91cjogVHJvdXBlL0NvbXBhPGJyPkNhbXAgZCfDqXTDqTogb3Vp" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_73847526199c4fefb5f600ff7bf71a0e.setContent(i_frame_54368b0f2b854b49a024168aa834c7f0);
+        
+
+        marker_64676de0ad634045a3d1b1a2d5fbc4ab.bindPopup(popup_73847526199c4fefb5f600ff7bf71a0e)
+        ;
+
+        
+    
+    
+            marker_64676de0ad634045a3d1b1a2d5fbc4ab.bindTooltip(
+                `<div>
+                     Château De Nitray 37270 Athée Sur Cher
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a02004af30184cc4b0ccf343b9ff5615 = L.marker(
+                [49.0315767, -0.4227027],
+                {}
+            ).addTo(map_686827d8be69451cba59ac112065c160);
+        
+    
+        var popup_f3a3480f408d48fc8726f9e665a76945 = L.popup({"maxWidth": 500, "minWidth": 300});
+
+        
+            var i_frame_4f071709a0d040a3923765632c7e9b92 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBMZXMgTW91dGllcnMgRW4gQ2luZ2xhaXMgMTQyMjA8YnI+TS5Db3F1ZWxpbjxicj4wMjMxNzkzNzM3PGJyPkNhbXAgcG91cjogTWV1dGUvUm9uZGU8YnI+Q2FtcCBkJ8OpdMOpOiBub25l" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_f3a3480f408d48fc8726f9e665a76945.setContent(i_frame_4f071709a0d040a3923765632c7e9b92);
+        
+
+        marker_a02004af30184cc4b0ccf343b9ff5615.bindPopup(popup_f3a3480f408d48fc8726f9e665a76945)
+        ;
+
+        
+    
+    
+            marker_a02004af30184cc4b0ccf343b9ff5615.bindTooltip(
+                `<div>
+                     Les Moutiers En Cinglais 14220
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_497675afb298466ba8bf990a413e6ecc = L.marker(
+                [48.5632353, -2.4594849],
+                {}
+            ).addTo(map_686827d8be69451cba59ac112065c160);
+        
+    
+        var popup_e2f2ea44d54048518336487ffddc06cd = L.popup({"maxWidth": 500, "minWidth": 300});
+
+        
+            var i_frame_187024a518b74e598a9e571cb3a6f9c8 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBMYSBNb3R0ZSBSb3VnZSAyMjQwMDxicj5NLkRlIExhIE1vdHRlIFJvdWdlPGJyPjxicj5DYW1wIHBvdXI6IFBhdHJvdWlsbGUvRXF1aXBlPGJyPkNhbXAgZCfDqXTDqTogbm9u" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_e2f2ea44d54048518336487ffddc06cd.setContent(i_frame_187024a518b74e598a9e571cb3a6f9c8);
+        
+
+        marker_497675afb298466ba8bf990a413e6ecc.bindPopup(popup_e2f2ea44d54048518336487ffddc06cd)
+        ;
+
+        
+    
+    
+            marker_497675afb298466ba8bf990a413e6ecc.bindTooltip(
+                `<div>
+                     La Motte Rouge 22400
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d10e3131d41c434ab5d13f9dadea3c0f = L.marker(
+                [48.5115831, -2.5580518],
+                {}
+            ).addTo(map_686827d8be69451cba59ac112065c160);
+        
+    
+        var popup_ba68915323be4abca5d7bff6eca3e17f = L.popup({"maxWidth": 500, "minWidth": 300});
+
+        
+            var i_frame_15bff0b7389e4c3ead663ead9df2d849 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBMZSBIb3VybWVsaW4gMjI0MDA8YnI+TS5EZSBSb3NhbmJvPGJyPjAyOTYzMjgxMDQvMDY2MzE0NTcyODxicj5DYW1wIHBvdXI6IE1ldXRlL1JvbmRlPGJyPkNhbXAgZCfDqXTDqTogb3Vp" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_ba68915323be4abca5d7bff6eca3e17f.setContent(i_frame_15bff0b7389e4c3ead663ead9df2d849);
+        
+
+        marker_d10e3131d41c434ab5d13f9dadea3c0f.bindPopup(popup_ba68915323be4abca5d7bff6eca3e17f)
+        ;
+
+        
+    
+    
+            marker_d10e3131d41c434ab5d13f9dadea3c0f.bindTooltip(
+                `<div>
+                     Le Hourmelin 22400
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f98566cdcdc942058f3fc73d094db434 = L.marker(
+                [48.727568, -3.2666034],
+                {}
+            ).addTo(map_686827d8be69451cba59ac112065c160);
+        
+    
+        var popup_95061a6cba0140afb529c865fa966d5f = L.popup({"maxWidth": 500, "minWidth": 300});
+
+        
+            var i_frame_cba14d31d0fd456e8c5d4ed881ab2d3b = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBLZXJtZXplbiAyMjQ1MDxicj5NLk1pY2hlbCBEZSBLZXJtZWw8YnI+MDIgOTYgOTEgMzUgNzU8YnI+Q2FtcCBwb3VyOiA8YnI+Q2FtcCBkJ8OpdMOpOiA=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_95061a6cba0140afb529c865fa966d5f.setContent(i_frame_cba14d31d0fd456e8c5d4ed881ab2d3b);
+        
+
+        marker_f98566cdcdc942058f3fc73d094db434.bindPopup(popup_95061a6cba0140afb529c865fa966d5f)
+        ;
+
+        
+    
+    
+            marker_f98566cdcdc942058f3fc73d094db434.bindTooltip(
+                `<div>
+                     Kermezen 22450
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2557b11837041ec95e265909b2b7746 = L.marker(
+                [48.4457015, -2.189298475806452],
+                {}
+            ).addTo(map_686827d8be69451cba59ac112065c160);
+        
+    
+        var popup_63dc5648bbbb446a99c0750be2736249 = L.popup({"maxWidth": 500, "minWidth": 300});
+
+        
+            var i_frame_1e5bd362d00049a8a47171e03d01966f = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBUaGF1bWF0eiAyMjk4MDxicj5NLlJvY2hlPGJyPjAyLjk2LjI3LjYwLjIxPGJyPkNhbXAgcG91cjogTWV1dGUvUm9uZGU8YnI+Q2FtcCBkJ8OpdMOpOiBvdWk=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_63dc5648bbbb446a99c0750be2736249.setContent(i_frame_1e5bd362d00049a8a47171e03d01966f);
+        
+
+        marker_e2557b11837041ec95e265909b2b7746.bindPopup(popup_63dc5648bbbb446a99c0750be2736249)
+        ;
+
+        
+    
+    
+            marker_e2557b11837041ec95e265909b2b7746.bindTooltip(
+                `<div>
+                     Thaumatz 22980
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2224100e52c417497b36e3aabdce27f = L.marker(
+                [47.990026617309624, -1.4711707469912838],
+                {}
+            ).addTo(map_686827d8be69451cba59ac112065c160);
+        
+    
+        var popup_0ca423a106d14693830110f74a146eb7 = L.popup({"maxWidth": 500, "minWidth": 300});
+
+        
+            var i_frame_d11775df3bc44266b4dd68d7b251d41c = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBMZSBHcm9zIENow6puZSAzMTE1MCBBTUFOTElTPGJyPk0uRGUgUXVlbmV0YWluPGJyPjAyIDk5IDQ0IDQ2IDc2PGJyPkNhbXAgcG91cjogPGJyPkNhbXAgZCfDqXTDqTog" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_0ca423a106d14693830110f74a146eb7.setContent(i_frame_d11775df3bc44266b4dd68d7b251d41c);
+        
+
+        marker_a2224100e52c417497b36e3aabdce27f.bindPopup(popup_0ca423a106d14693830110f74a146eb7)
+        ;
+
+        
+    
+    
+            marker_a2224100e52c417497b36e3aabdce27f.bindTooltip(
+                `<div>
+                     Le Gros Chêne 31150 AMANLIS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

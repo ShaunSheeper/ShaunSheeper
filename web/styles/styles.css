@@ -1,0 +1,139 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+#login{
+    background-image: url(../images/back.jpg);
+    background-position:center;
+    background-size:cover;
+    text-align: center;
+}
+
+#login_form{
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: floralwhite;
+    border-radius: 10px;
+}
+
+#global{
+    width: 100%;
+    height: 100%;
+}
+
+#left{
+    float:left;
+    width:50%;
+    height: 100%;
+    background-image: url(../images/left.jpg);
+    opacity: 1;
+    background-position:center;
+    background-size:cover;
+    text-align: center;    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#right{
+    float:right;
+    width:50%;
+    height: 100%;
+    background-image: url(../images/right.jpg);
+    opacity: 1;
+    background-position:center;
+    background-size: cover;
+    text-align: center;
+    padding: auto;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#left:hover{
+    opacity: .6;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    font-size: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#right:hover{
+    opacity: .6;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    font-size: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    margin-top: 50%;
+}
+
+#left p{
+    visibility: hidden;
+}
+
+#right p{
+    visibility: hidden;
+}
+
+#left:hover p{
+    visibility: visible;
+}
+
+#right:hover p{
+    visibility: visible;
+}
+
+
+button {      
+    width: 100%;  
+    color: rgb(35, 39, 42);   
+    padding: 15px;   
+    margin: 10px 0px;   
+    border: none;   
+    cursor: pointer;  
+    border-radius: 5px; 
+}   
+
+form {   
+    width: 500px;
+    height: 230px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(35, 39, 42);
+    border-radius: 10px;
+    opacity: 0.8;
+ }   
+
+input[type=text], input[type=password] {   
+    width: 100%;   
+    margin: 8px 0;  
+    padding: 12px 20px;   
+    display: inline-block;   
+    box-sizing: border-box;   
+    border-radius: 5px;
+ }  
+
+button:hover {   
+     opacity: 0.7;   
+ }   
+  
+.container {   
+     padding: 25px;   
+ }   
